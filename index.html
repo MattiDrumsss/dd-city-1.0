@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#09090d" />
+    <title>D&D CITY 1.0</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="menu" class="screen">
+        <div class="menu-backdrop"></div>
+        <div class="brand"><span>D&amp;D</span><b>CITY <i>1.0</i></b></div>
+        <p class="eyebrow">OPEN WORLD EXPERIENCE</p>
+        <h1>LA CITTÀ<br><em>È TUA.</em></h1>
+        <p class="intro">Esplora. Guida. Scopri D&amp;D City.</p>
+        <button id="startBtn" class="primary">ENTRA IN CITTÀ <span>↗</span></button>
+        <div class="menu-foot">PROTOTYPE 0.1 · SINGLE PLAYER · DESKTOP</div>
+      </div>
+
+      <div id="loading" class="screen hidden">
+        <div class="brand small"><span>D&amp;D</span><b>CITY <i>1.0</i></b></div>
+        <div class="loader"></div>
+        <p>CARICAMENTO DELLA CITTÀ</p>
+      </div>
+
+      <div id="hud" class="hidden">
+        <div class="hud-top">
+          <div class="brand mini"><span>D&amp;D</span><b>CITY <i>1.0</i></b></div>
+          <div class="location"><small>POSIZIONE</small><strong id="district">DOWNTOWN</strong></div>
+          <div class="clock"><small>ORA LOCALE</small><strong id="clock">20:45</strong></div>
+        </div>
+        <div class="hud-bottom">
+          <div class="status"><span class="dot"></span><span id="statusText">A PIEDI</span></div>
+          <div class="help">WASD <small>MUOVITI</small> &nbsp; MOUSE <small>VISUALE</small> &nbsp; V <small>CAMERA</small> &nbsp; F <small>VEICOLO</small> &nbsp; ESC <small>MENU</small></div>
+        </div>
+        <div id="crosshair" class="crosshair"></div>
+        <div id="vehicleHint" class="vehicle-hint hidden">PREMI <b>F</b> PER ENTRARE NEL VEICOLO</div>
+        <div id="pause" class="pause hidden">
+          <div class="pause-card">
+            <div class="brand small"><span>D&amp;D</span><b>CITY <i>1.0</i></b></div>
+            <h2>PAUSA</h2>
+            <p>La città può aspettare. Per un po'.</p>
+            <button id="resumeBtn" class="primary">TORNA AL GIOCO</button>
+            <div class="pause-controls">WASD · movimento<br>Mouse · visuale<br>V · cambia visuale<br>F · entra/esci dal veicolo<br>ESC · pausa</div>
+          </div>
+        </div>
+        <div id="toast" class="toast"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
