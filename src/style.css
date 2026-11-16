@@ -49,3 +49,9 @@ button{font:800 12px Inter,sans-serif;letter-spacing:1.6px;cursor:pointer}
 .toast{position:absolute;top:100px;left:50%;transform:translate(-50%,-10px);background:rgba(12,9,20,.88);border:1px solid rgba(185,138,255,.5);padding:11px 18px;font-size:9px;letter-spacing:1.5px;opacity:0;transition:.2s}
 .toast.show{opacity:1;transform:translate(-50%,0)}
 @media(max-width:700px){.screen{padding:9vw}.brand{font-size:34px}h1{font-size:72px}.hud-top{left:14px;right:14px;top:14px;gap:12px}.hud-bottom{left:14px;right:14px;bottom:14px}.help{max-width:70%;line-height:1.8}.menu-foot{left:9vw}}
+
+/* Prototype 0.2: interfaccia più leggera e adattiva */
+canvas{touch-action:none}
+button,.primary{ -webkit-tap-highlight-color:transparent }
+.primary{will-change:transform}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
